@@ -22,8 +22,10 @@ def left_move():
 
 def restart():
     turtle.reset()
+    turtle.stamp()
 
 turtle.shape('turtle')
+turtle.stamp()
 
 turtle.onkey(up_move,'w')
 turtle.onkey(down_move,'s')
