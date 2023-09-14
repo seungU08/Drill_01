@@ -20,11 +20,15 @@ def left_move():
     turtle.forward(50)
     turtle.stamp()
 
+def restart():
+    turtle.reset()
+
 turtle.shape('turtle')
 
 turtle.onkey(up_move,'w')
 turtle.onkey(down_move,'s')
 turtle.onkey(right_move,'d')
 turtle.onkey(left_move,'a')
+turtle.onkey(restart,'Escape')
 
 turtle.listen()
